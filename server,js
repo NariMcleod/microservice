@@ -1,0 +1,36 @@
+const express = require('express');
+const cities = require('cities');
+const app = express();
+const bodyParser = require('body-parser');
+const port = 3000;
+const path = require('path');
+app.use(express.static('public'))
+
+
+app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(bodyParser.json());
+
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/index.html'));
+
+});
+
+
+app.post('/zip', (req, res) => {
+
+    zip = req.body.zip
+    dish = req.body.dish
+    res.send('You entered' + " " + zip +" "+"and"+" "+ dish);
+
+    const cities = require('cities');
+    let city = cities.zip_lookup(zip);
+    console.log(city);
+  });
+
+
+
+
+
+app.listen(port, () => {
+  console.log(`NodeJS app listening on port ${port}`)
+})
