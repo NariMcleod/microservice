@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body { padding-top: 50px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Find a restaurant near me! Please enter zip code and a dish you're craving! </h2>
+    </div>
+    <form action="http://localhost:3000/zip" method="POST">
+        <label for="zip">Zip code:</label><br>
+        <input type="number" name="zip" ><br>
+        <label for="dish">Dish:</label><br>
+        <input type="text" name="dish" ><br><br>
+        <button type="submit">Send to backend</button>
+      </form> 
+  </div>
+    
+</body>
+</html>

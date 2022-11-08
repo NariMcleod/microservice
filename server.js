@@ -6,26 +6,30 @@ const port = 3000;
 const path = require('path');
 app.use(express.static('public'))
 
-
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, '/index.html'));
+  res.sendFile(path.join(__dirname, '/index.html'));
 
 });
 
-
 app.post('/zip', (req, res) => {
 
-    zip = req.body.zip
-    dish = req.body.dish
-    res.send('You entered' + " " + zip +" "+"and"+" "+ dish);
+    let zip = req.body.zip
+    let dish = req.body.dish
 
     const cities = require('cities');
     let city = cities.zip_lookup(zip);
     console.log(city);
+    res.send(city);
   });
+
+
+  
+app. get('/', function (req, res) {
+	
+});
 
 
 
