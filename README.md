@@ -19,4 +19,7 @@ not free,you will be billed for every field the results return from Places API e
 is not returning an accurate result for the microservice. to avoid being billed, I will use the Find Place API
 
 
+- Zipcodes: html5 geolocation and Google's geolocator which both can convert
+Zip codes to latitude and longitude for Google map has to be with HTTPS so I couldnt use it for localhost which is http.
+So I just used predetermined set of zipcodes for zipcodes to coordinates conversion 
 
