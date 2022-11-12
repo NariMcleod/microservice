@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cs361 Microservice</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="./index.js"></script>
+</head>
+<style>
+h2 {
+    color:#87CEEB;
+  font-weight:bolder}
+
+div,p,ul, li, label {
+  color:#87CEEB;
+
+  font-weight:normal}
+</style>
+
+<body  style="background-color:#383838">
+  
+ <h2> Please enter one of the below zipcodes and a dish name</h2>
+  <ul>
+    <li>59102</li>
+    <li>94501</li>
+    <li>94112</li>
+    <li>78701</li>
+    <li>97035</li>
+  </ul> 
+ 
+    <label for="zip">Zip code: </label><br>
+    <input type="number" id="zip"/><br>
+    <label for="dish">Dish: </label><br>
+    <input type="text" id="dish"/><br>
+    <button onClick="saveInput()"> Submit</button>
+  <div id="lat"></div>
+  <div id="lon"></div>
+  <div id="name"></div> <br>
+  <div id="list"></div>
+  <br>
+
+
+<div id="myMap" style="width:80%;height:400px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places"></script>
+</body>
+</html>
