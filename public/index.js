@@ -46,7 +46,15 @@ const data = [
       "longitude":-122.72492,
       "city":"Lake Oswego",
       "state":"Oregon"
-  }]
+  },
+  {
+    "zipcode": 63103,        // Example zip code for St. Louis
+    "state_abbr": "MO",        // Missouri state abbreviation
+    "latitude": 38.635000,    // Approximate latitude for St. Louis (zip 63103)
+    "longitude": -90.22000,   // Approximate longitude for St. Louis (zip 63103)
+    "city": "St. Louis",     // City name
+    "state": "Missouri"      // State name
+}]
 
 
 
