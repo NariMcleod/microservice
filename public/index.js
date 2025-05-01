@@ -54,6 +54,14 @@ const data = [
     "longitude": -90.22000,   // Approximate longitude for St. Louis (zip 63103)
     "city": "St. Louis",     // City name
     "state": "Missouri"      // State name
+},
+{
+  "zipcode": 39180,        // Example zip code for Vicksburg
+  "state_abbr": "MS",        // Mississippi state abbreviation
+  "latitude": 32.319000,    // Approximate latitude for Vicksburg (zip 39180)
+  "longitude": -90.87300,   // Approximate longitude for Vicksburg (zip 39180)
+  "city": "Vicksburg",     // City name
+  "state": "Mississippi"   // State name
 }]
 
 
